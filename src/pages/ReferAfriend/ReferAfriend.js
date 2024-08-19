@@ -147,7 +147,7 @@ const ReferAfriend = () => {
 
 <div className='left'>
 
-<h1>Refer <span>your </span><span>friends </span>to earn more</h1>
+<h1>Refer your <span>friends </span>to <span>earn </span>more</h1>
 <p>Every time you refer a friend who successfully secures a rebate, we will transfer £100 directly to your bank account.
 <br/>
 <br/>
@@ -210,48 +210,52 @@ Plus anyone can refer, so why not start now!
 
 
 <div className='aboutCompany'>
+  <h1>CONTACT US </h1>
+  <h4>Feel free to get in touch & We'll get back to you</h4>
 
+<div className='companyContainer'>
 <div className='ceo'>
 
-  <figure>
-    <img src={profilepic}/>
-  </figure>
-
-  <h1>Mr.Hassan Magdy</h1>
-  <p>CEO , ProCre</p>
- 
-  <div className='wrapper'>
-  <div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:369 258 147">Tel : 369 258 147</a></span></div>
-  <div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: h@procrew.pro</a></span></div>
 
 
-    
-    </div>
+<h4>Mr.Hassan Magdy</h4>
+<p>CEO , ProCre</p>
+
+<div className='wrapper'>
+<div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:369 258 147">Tel : 369 258 147</a></span></div>
+<div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: h@procrew.pro</a></span></div>
+
+
+  
+  </div>
 
 
 
 </div>
 <div className='office'>
 
-  <h1>Our Office</h1>
+<h4>Our Office</h4>
 
- <div className='address'>
- <PlaceRoundedIcon/>
- <p>TaxHoot<br/>
-  30 Churchill Place,<br/>
-  Canary Wharf,<br/>
-  London E14 5EU
+<div className='address'>
+<PlaceRoundedIcon/>
+<p>TaxHoot<br/>
+30 Churchill Place,<br/>
+Canary Wharf,<br/>
+London E14 5EU
 </p>
 
 
- </div>
- 
-
-  <figure className='map'>
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.428178097917!2d-0.024621511144755737!3d51.505360138183825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602b0a1266417%3A0x8816199b3209b78f!2sCanary%20Wharf!5e0!3m2!1sen!2sin!4v1721928776591!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </figure>
 </div>
+
+
+
+</div>
+</div>
+<figure className='map'>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.428178097917!2d-0.024621511144755737!3d51.505360138183825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602b0a1266417%3A0x8816199b3209b78f!2sCanary%20Wharf!5e0!3m2!1sen!2sin!4v1721928776591!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</figure>
+
 
 </div>
 
