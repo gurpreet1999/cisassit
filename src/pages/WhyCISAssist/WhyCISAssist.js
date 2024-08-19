@@ -163,7 +163,7 @@ const WhyCISAssist = () => {
     <div className="whyCISAssist">
       <section className="heroSection">
         <div className="left">
-          <h1>Let CISAssist simplify your CIS rebate claims.</h1>
+          <h1>Let <span>CISAssist</span> simplify your CIS  rebate  <span>claims.</span> </h1>
           <p>
             Navigating CIS rebate claims can be challenging and time-consuming.
             At CISAssist, we streamline the process by combining our expert team

@@ -11,8 +11,11 @@
     .left {
       width: 60%;
       h1 {
-        font-size: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 0.811), 3rem);
+        font-size: clamp(2.55rem, 2.55rem + ((1vw - 0.2rem) * 0.811), 4rem);
         font-weight: 700;
+        span{
+          color: #ff6127;
+        }
       }
       p {
         font-weight: 400;
@@ -94,6 +97,8 @@
     h1{
       font-size: 64px;
 text-align: center;
+
+
     }
 
     .serviceContainer{

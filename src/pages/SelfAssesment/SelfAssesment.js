@@ -173,8 +173,8 @@ const SelfAssesment = () => {
     <div className="selfAssesment">
       <section className="heroSection">
         <div className="left">
-          <h1>Self assessments made simple</h1>
-          <h2>£149 +VAT (No hidden fees)</h2>
+          <h1>Self <span>assessments</span> made simple</h1>
+          <h2><span>£149</span> +VAT (No hidden fees)</h2>
           <p>
             Whatever your employment circumstances, we make self-assessment tax
             returns easy for you.
@@ -304,7 +304,7 @@ const SelfAssesment = () => {
                       Step 4
                     </div>
                     <div className="stepContent">
-                    Once we have everything, we’ll prepare and submit your self-assessment within 20 days..
+                    We’ll submit your self-assessment within 20 days after receiving all documents.
                     </div>
                   </div>
                 </div>

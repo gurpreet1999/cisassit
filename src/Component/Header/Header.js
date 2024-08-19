@@ -3,15 +3,16 @@ import "./Header.scss";
 import { Link, useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from '@mui/icons-material/Close';
+
+
+import CISLogo from "../../Assest/Logo/CISLogo.svg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.config({ logLevel: 0 });
 gsap.registerPlugin(ScrollTrigger);
-import CloseIcon from '@mui/icons-material/Close';
 
-// Importing Logo
-import CISLogo from "../../Assest/Logo/CISLogo.svg";
 const Header = () => {
 
   const location = useLocation();
