@@ -6,7 +6,8 @@ import LockPersonRoundedIcon from "@mui/icons-material/LockPersonRounded";
 import Person2RoundedIcon from "@mui/icons-material/Person2Rounded";
 import CallIcon from "@mui/icons-material/Call";
 import callGuyImg from "../../Assest/workingProcess/IMG1.png";
-import computer from "../../Assest/Group\ 46.png"
+import computer from "../../Assest/computer.png"
+import mobile from "../../Assest/mobile.png"
 import Lottie from "lottie-react";
 import MessageTyping from "../../Assest/animation/typinganimation.json";
 import gsap from "gsap";
@@ -312,11 +313,11 @@ const SelfAssesment = () => {
             </div>
           </div>
           <div className="right">
-
-            <img src={computer}/>
-
-
-          </div>
+  <picture>
+    <source srcSet={mobile} media="(max-width: 650px)" />
+    <img src={computer} alt="Computer" />
+  </picture>
+</div>
         </div>
       </section>
 

@@ -1,14 +1,18 @@
 import React from 'react'
 import "./ReferAfriend.scss"
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
-import LockPersonRoundedIcon from '@mui/icons-material/LockPersonRounded';
+
+
 import heroimage from "../../Assest/Group 9154.png"
 import profilepic from "../../Assest/male-female-office-workers.jpg"
 import star from "../../Assest/Frame 54.png"
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import PlaceRoundedIcon from '@mui/icons-material/PlaceRounded';
-import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
+
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import LockPersonRoundedIcon from "@mui/icons-material/LockPersonRounded";
+import Person2RoundedIcon from "@mui/icons-material/Person2Rounded";
+import CallIcon from "@mui/icons-material/Call";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -158,19 +162,23 @@ Plus anyone can refer, so why not start now!
   <header>
     <h2>Your details.</h2>
   </header>
-  <div class="wrapper">
-    <Person2RoundedIcon/>
-    <input type="text" placeholder="Username" required/>
-
-  </div>
-  <div class="wrapper">
-  <EmailRoundedIcon/>
-    <input type="text" placeholder="Email" required/>
-  </div>
-  <div class="wrapper">
-  <LockPersonRoundedIcon/>
-    <input type="password" placeholder="Password" required/>
-  </div>
+  <div className="wrapper">
+                <Person2RoundedIcon className="inputIcon" />
+                <input
+                  className="input100"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div className="wrapper">
+                <EmailRoundedIcon className="inputIcon" />
+                <input type="text" placeholder="Email" required />
+              </div>
+              <div className="wrapper">
+                <CallIcon className="inputIcon" />
+                <input type="number" placeholder="Phone Number" required />
+              </div>
   
  
 </form>
@@ -179,17 +187,17 @@ Plus anyone can refer, so why not start now!
     <h2>Your friends details</h2>
   </header>
   <div class="wrapper">
-    <Person2RoundedIcon/>
+  <Person2RoundedIcon className="inputIcon" />
     <input type="text" placeholder="'Referred by' First Name*" required/>
 
   </div>
   <div class="wrapper">
-  <EmailRoundedIcon/>
-    <input type="text" placeholder="'Referred by' Email*" required/>
+  <EmailRoundedIcon className="inputIcon" />
+    <input type="email" placeholder="'Referred by' Email*" required/>
   </div>
   <div class="wrapper">
-  <LockPersonRoundedIcon/>
-    <input type="password" placeholder="Referral Phone Number" required/>
+  <CallIcon className="inputIcon" />
+    <input type="number" placeholder="Referral Phone Number" required/>
   </div>
   <button type="submit">Submit</button>
  
