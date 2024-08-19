@@ -1,0 +1,46 @@
+.faq {
+  .heroSection {
+    height: 280px;
+    color: white;
+    background-color: #0c2535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      width: 480px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+
+  .accordianSection {
+    padding: 5rem 8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .MuiPaper-root {
+      border-radius: 20px;
+      width: 600px;
+      background-color: #c9d6e08f;
+      box-shadow: 1px 1px #c9d6e08f;
+
+      &::before {
+        display: none !important;
+      }
+    }
+    .MuiSvgIcon-root {
+      color: rgb(77, 77, 77);
+      font-size: 24px;
+      font-weight: 900;
+    }
+  }
+}

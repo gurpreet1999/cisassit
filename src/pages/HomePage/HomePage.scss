@@ -1,0 +1,705 @@
+.homePage {
+  width: 100%;
+
+  .heroSection {
+    padding: 0 8rem;
+    height: 40rem;
+    background-color: #0c2535;
+    display: flex;
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-weight: 700;
+        color: #ecf3f2;
+        font-size:68px;
+        line-height: 1.1;
+        i {
+          color: #ff6127;
+        }
+      }
+      p {
+        margin-top: -1rem;
+        color: #ecf3f2;
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+      button {
+        background-color: #ff4400;
+        border-radius: 5rem;
+        padding: 1rem 2rem;
+        color: #ecf3f2;
+        font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 0.27), 1.5rem);
+        align-self: self-start;
+      }
+    }
+
+    .right {
+      width: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .growthAnimation {
+        width: 90%;
+        text-align: end;
+      }
+    }
+  }
+
+  .reviewSection {
+    background-color: #dbdfe2;
+    padding: 5rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+
+    .reviewContainer {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .reviewsList {
+        display: flex;
+        gap: 10px;
+      }
+
+      .icons {
+        font-size: 2rem;
+        color: rgb(174, 174, 174);
+        cursor: pointer;
+      }
+    }
+
+    .reviewCard {
+      padding: 1rem;
+      width: 20rem;
+      border: 0.2px solid #ff85038a;
+      border-radius: 10px;
+      background-color: #ffffff73;
+     
+      .cardHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+   .userDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    .name-date{
+    
+      display: flex;
+      flex-direction: column;
+      h6{
+        margin: 0;
+
+      }
+      p{
+        margin: 0;
+      }
+    }
+   }
+        .rating{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+        }
+
+      }
+     
+      .reviewContent {
+        h1 {
+          font-size: 1rem;
+          font-weight: 700;
+          height: 16px;
+        }
+        p {
+          font-size: 0.75rem;
+          line-height: 16px;
+          font-weight: 500;
+          color: #5c5c5c;
+        }
+
+        .userDetail {
+          color: rgba(12, 37, 53, 0.6);
+          font-size: 0.7rem;
+
+          span {
+            color: rgba(12, 37, 53, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  // working process
+  .workingProcess {
+    background-color: #dbdfe2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8rem 5rem 8rem;
+
+    h1 {
+      color: #0c2535;
+      font-weight: 700;
+      font-size: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 1.622), 3.75rem);
+    }
+
+    .cardContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .divider {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 2rem;
+        padding-bottom: 5rem;
+        img {
+          width: 100%;
+        }
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        figure {
+          width: 15rem;
+          img {
+            width: 100%;
+          }
+        }
+
+        .cardContent {
+          text-align: center;
+          h2 {
+            color: #0c2535;
+            font-weight: 700;
+            line-height: 1;
+
+            font-size: clamp(
+              1.5rem,
+              1.5rem + ((1vw - 0.2rem) * 0.405),
+              1.875rem
+            );
+          }
+          p {
+            color: #323232;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  // CIS Rebate Services
+  // .CISServicesSection{
+  //   // padding: 5rem 8rem;
+    
+  //   .sectionHeading{
+  //     text-align: center;
+  //     font-size: 4rem;
+  //   }
+  //   .cardContainer{
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 5rem;
+  //   }
+  //   .card{
+  //     width: 100%;
+  //     position: relative;
+  //     display: flex;
+  //     flex-direction: row;
+  //     align-items: center;
+      
+  //     &:nth-child(even){
+  //       flex-direction: row-reverse;
+
+  //       .cardTextCont{
+  //         border-radius: 3rem 0 0 3rem;
+  //         padding-left: 6rem;
+  //       }
+  //       .cardMediaCont{
+  //         margin-right: -4rem;
+  //       }
+  //     }
+  //   }
+  //   .cardTextCont{
+  //     width: 70%;
+  //     padding: 5rem;
+  //     border-radius: 0 3rem 3rem 0;
+  //     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  //     background-color: rgb(35, 158, 240);
+  //   }
+  //   .cardHeading{
+  //     font-size: 2.5rem;
+  //     color: rgb(255, 255, 255);
+  //   }
+  //   .cardSubheading{
+  //     color: rgb(255, 255, 255);
+  //     margin-top: -1rem;
+  //     margin-bottom: 2rem; 
+  //     font-size: 1.2rem;
+  //   }
+  //   .cardOptionsList{
+  //     margin-top: -1rem;
+  //     color: rgb(237, 237, 237);
+  //   }
+  //   .cardOption{
+  //     font-size: 1.2rem;
+  //     margin-bottom: 1rem;
+  //     ul{
+  //       margin-top: 1rem;
+  //     }
+  //   }
+  //   strong{
+  //     color: rgb(255, 255, 255);
+  //   }
+  //   h4{
+  //     color: white;
+  //     font-weight: 500;
+  //     font-size: 1.5rem;
+  //   }
+
+  //   .cardMediaCont{
+  //     height: 400px;
+  //     width: 400px;
+  //     min-width: 400px;
+  //     background-color: rgb(204, 204, 204);
+  //     border-radius: 2rem;
+  //     margin-left: -4rem;
+  //     // position: absolute;
+  //     // right: -300px;
+  //     // top: 50%;
+  //     // transform: translateY(-50%);
+  //     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  //     overflow: hidden;
+  //     img{
+  //       height: 100%;
+  //       width: 100%;
+  //       object-fit: cover;
+  //       transition: 10s linear;
+  //       transform: scale(1);
+  //       &:hover{
+  //         transform:scale(1.2);
+  //       }
+  //     }
+  //   }
+  // }
+
+  // Services
+  .services {
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    .card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        img {
+          width: 60%;
+        }
+      }
+
+      .cardContent {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-weight: 700;
+          color: #17191f;
+          font-size: clamp(
+            1.875rem,
+            1.875rem + ((1vw - 0.2rem) * 0.405),
+            2.25rem
+          );
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 1.25rem;
+          margin-top: -0.5rem;
+
+          strong {
+            color: #323232;
+          }
+        }
+        button {
+          background-color: #ff5729;
+          border-radius: 5rem;
+          padding: 1rem 2rem;
+          color: #ffffff;
+          font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 0.27), 1.5rem);
+          align-self: flex-start;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .card2{
+      display: flex;
+      figure{
+        order:1
+      }
+      .cardContent{
+        order: 2;
+      }
+    }
+  }
+
+  .requestCallback {
+    // background-color: rgb(240, 240, 240);
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../Assest/footer/worldMap.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    div {
+      background-color: #2424243a;
+      backdrop-filter: blur(8px);
+      height: 50%;
+      width: 80%;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(255, 255, 255);
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: clamp(1.875rem, 1.875rem + ((1vw - 0.2rem) * 0.405), 2.25rem);
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      margin-top: -1rem;
+    }
+    button {
+      background-color: #ff7048;
+      border-radius: 5rem;
+      padding: 1rem 2rem;
+      color: #000000;
+      font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 0.27), 1.5rem);
+    }
+  }
+
+
+  .ourServices {
+    display: flex;
+ flex-direction: column;
+ gap: 25px;
+
+    width: 100%;
+    padding: 4rem 7rem;
+
+    h1{
+      font-size: 64px;
+text-align: center;
+    }
+
+    .serviceContainer{
+      display: flex;
+      > .left {
+        text-align: center;
+  
+          width:50%;
+        
+  
+        h1 {
+          font-size: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 1.622), 3.75rem);
+          font-weight: 700;
+        }
+        p {
+          font-weight: 400;
+          font-size: 1.25rem;
+        }
+      }
+  
+      > .right {
+        width: 50%;
+       display: flex;
+       flex-direction: column;
+       gap:25px;
+  
+        .card {
+          display: flex;
+        
+          align-items: center;
+  
+          .left{
+            height: inherit;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+  
+            figure{
+              width: 230px;
+              height: 130px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+  
+          .right{
+           display: flex;
+           flex-direction: column;
+           gap: 5px;
+          
+      .criteria{
+        display: flex;
+        figure{
+          width: 25px;
+          height: 25px;
+  
+          svg{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        
+      }
+  
+  
+  
+          }
+          
+  
+  
+  
+        }
+      }
+    }
+
+  
+  }
+
+}
+
+
+
+@media (max-width : 650px) {
+  .homePage {
+   
+  
+    .heroSection {
+      padding:16px 20px ;
+      flex-direction: column;
+      height: auto;
+     
+      .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      
+  
+        h1 {
+         
+          font-size: 33px;
+         
+        }
+        p {
+         
+          font-size: 16px;
+         
+        }
+        button {
+          padding: 12px 24px;
+          font-size: 16px;
+         
+          
+        }
+      }
+  
+      .right {
+        width: 100%;
+      
+      }
+    }
+
+
+    .workingProcess {
+     
+     
+      padding: 16px 20px;
+  
+      h1 {
+       
+        font-size: 24px;
+      }
+  
+      .cardContainer {
+       
+        display: flex;
+       flex-direction: column;
+       gap: 30px;
+       align-items: center;
+        .divider {
+         
+          padding-bottom: 0;
+         
+        }
+        .card {
+         
+        
+  
+          .cardContent {
+           
+            h2 {
+             
+              font-size:24px;
+            }
+            p {
+             
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .services{
+
+      padding: 16px 20px;
+
+      .card{
+        flex-direction: column;
+        gap: 30px;
+
+        .cardContent{
+          width: 100%;
+        }
+        figure{
+
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+
+      }
+      .card2{
+        display: flex;
+        figure{
+          order:2
+        }
+        .cardContent{
+          order: 1;
+        }
+      }
+    }
+    .ourServices {
+      padding:16px 20px;
+
+      h1{
+        font-size: 24px;
+      }
+
+       .serviceContainer{
+        flex-direction: column;
+
+   .left{
+    width: 100%;
+   }
+
+   .right{
+    width: 100%;
+
+    .card{
+
+flex-direction: column;
+
+gap: 10px;
+
+.left{
+  align-items: center;
+  justify-content: center;
+}
+.right{
+
+  gap: 8px;
+.criteria{
+  label{
+    font-size:16px ;
+  }
+}
+
+}
+
+    }
+
+
+   }
+
+
+       }
+    }
+    .requestCallback {
+      // background-color: rgb(240, 240, 240);
+      height: 18rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("../../Assest/footer/worldMap.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      div {
+    
+        height: 65%;
+        width:100%;
+        padding: 0 15px;
+        gap: 5px;
+        backdrop-filter: blur(2px);
+   
+    
+      }
+  
+      h1 {
+      
+        font-size:20px;
+      }
+  
+      p {
+       
+        font-size: 12px;
+    
+      }
+      button {
+      padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+
+}

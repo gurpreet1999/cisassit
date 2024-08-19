@@ -1,0 +1,115 @@
+.privacyPolicy{
+width: 100%;
+
+.heroSection{
+
+height: 200px;
+background-color: #0c2535;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.policyContainer{
+
+    padding: 5rem 15rem;
+    h1{
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+    ul{
+        li{
+            font-size: 0.8rem;
+        }
+    }
+  
+   
+}
+
+.policyFooter{
+
+padding: 2rem 15rem;
+background-color: #C9D6E0;
+
+
+
+ul {
+
+
+    li{
+        font-size: 0.8rem;
+    }
+}
+
+}
+
+
+}
+
+@media (max-width : 650px) {
+    .privacyPolicy{
+        .heroSection{
+
+   h1{
+
+    font-size:15px;
+   }
+  
+
+           
+        }
+
+        .policyContainer{
+
+            padding: 16px 20px;
+
+            h1{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        
+            p{
+                font-size: 14px;
+                text-align: start;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                }
+            }
+
+
+           }
+
+
+           .policyFooter{
+
+            padding: 16px 20px;
+            background-color: #C9D6E0;
+           h1{
+            font-size: 24px;
+            text-align: center;
+           }
+            p{
+                font-size: 14px;
+            }
+            
+            ul {
+            
+            
+                li{
+                    font-size: 12px;
+                }
+            }
+            
+            }
+    }
+ 
+   
+}
