@@ -132,6 +132,7 @@ const Header = () => {
         <NavLink
           to="/self-assesment"
           className={({ isActive }) => (isActive ? "activeLink link" : "link")}
+          onClick={() => setShowNavbar(!showNavbar)}
         >
           <p>Self Assessment</p>
         </NavLink>
@@ -139,6 +140,7 @@ const Header = () => {
         <NavLink
           to="/refer-a-friend"
           className={({ isActive }) => (isActive ? "activeLink link" : "link")}
+          onClick={() => setShowNavbar(!showNavbar)}
         >
           <p>Refer a friend</p>
         </NavLink>
