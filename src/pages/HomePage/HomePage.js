@@ -58,9 +58,9 @@ const HomePage = () => {
           </h1>
           <p>
             CISAssist simplifies  CIS Tax Rebates and
-            CIS contractors, 
+            CIS contractors
           </p>
-          <h2 className="bold-orange">we minimize the stress and maximize the rebate .</h2>
+          <h2 className="bold-orange"><u>we  minimize the stress and maximize the rebate</u></h2>
           <button onClick={navigateToClaim}>
             <strong>Get Started</strong>
           </button>
@@ -190,10 +190,9 @@ const HomePage = () => {
             </figure>
             <div className="cardContent">
               <h2>Leave the Work to Us</h2>
+             
               <p>
-                Our team of expert <span>accountants</span> will handle your rebate
-                processing with HMRC, ensuring a smooth and efficient
-                experience.
+              Our <span className="bold">expert accountants</span> will handle your rebate processing with HMRC, ensuring a smooth and efficient experience
               </p>
             </div>
           </div>
@@ -208,7 +207,7 @@ const HomePage = () => {
             <div className="cardContent">
               <h2>Get Your Rebate Fast</h2>
               <p>
-                 multiple payment options
+                 Multiple Payment Options
               </p>
             </div>
           </div>
@@ -224,7 +223,7 @@ const HomePage = () => {
           <div className="cardContent">
             <h2>Expenses you can claims</h2>
             <p>
-              At CISAssist, our expertise covers a range of claims, including
+              At CISAssist, our expertise covers a range of expense claims, including
               <strong>
                 {" "}
                 travel expenses, accommodation, clothing & uniform, tools &
@@ -234,7 +233,7 @@ const HomePage = () => {
             </p>
             <p>
               Discover what you might be entitled to with our professional
-              assistance.
+              & compliant assistance.
             </p>
             <button>
               <strong onClick={navigateToClaim}>Speak with Our Experts</strong>
@@ -253,7 +252,7 @@ const HomePage = () => {
           <div className="cardContent">
             <h2>Minimize Claims Management</h2>
             <p>
-              CISAssist is dedicated to minimizing the stress and maximizing the rebate
+              CISAssist is dedicated to <strong>minimizing</strong> the stress and <strong>maximizing</strong> the rebate
             </p>
           </div>
         </div>

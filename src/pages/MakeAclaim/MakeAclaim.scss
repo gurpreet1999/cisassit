@@ -4,7 +4,7 @@
 
     .heroSection{
         background-color:#E0E0E2;
-        padding: 5rem 11rem;
+        padding: 1rem 8rem;
 
   width: 100%;
   display: flex;
@@ -20,6 +20,10 @@
 h1{
 font-size: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 2.432), 4.5rem);
 font-weight: 700;
+margin-bottom: -10px;
+span{
+    color: #ff5729;
+}
 }
 
 p{  width: 50%;
@@ -39,6 +43,72 @@ form{
     
     .wrapper{
         position: relative;
+        .inputIcon{
+            width: 1.5rem;
+            color: grey;
+            position: absolute;
+            top:12px;
+            left: 12px;
+        }
+
+        textarea{
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+            width: 100%;
+            background: #fffcfc;
+            height: 50px;
+            border-radius: 25px;
+           padding: 1rem 3rem;
+            border: 2px solid rgb(152, 152, 152);
+            outline: none;
+            transition: 0.3s all ease; 
+            &::placeholder {
+                color: rgb(196, 196, 196);
+                font-weight: 500;
+            }
+
+            &:focus {
+                border: 2px solid rgb(255, 82, 19);
+                animation: backgroundEffect 2s ease forwards
+            }
+
+        }
+        input {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+            width: 100%;
+            background: #fffcfc;
+            height: 50px;
+            border-radius: 25px;
+           padding: 1rem 3rem;
+            border: 2px solid rgb(152, 152, 152);
+            outline: none;
+            transition: 0.3s all ease;
+
+            &::placeholder {
+                color: rgb(196, 196, 196);
+                font-weight: 500;
+            }
+
+            &:focus {
+                border: 2px solid rgb(255, 82, 19);
+                animation: backgroundEffect 2s ease forwards
+            }
+
+            @keyframes backgroundEffect {
+                0%{
+                    box-shadow: rgba(255, 68, 0, 0.5) 0px 13px 27px -5px, rgba(255, 68, 0, 0.5) 0px 8px 16px -8px;
+                }
+                60%{
+                    box-shadow: rgba(255, 68, 0, 0.5) 0px 2px 5px -1px, rgba(255, 68, 0, 0.5) 0px 1px 3px -1px;
+                }
+                100%{
+                    box-shadow: none;
+                }
+            }
+        }
 
 svg{
     position: absolute;
@@ -46,20 +116,6 @@ svg{
     top: 10px;
     
 } 
-input{
-
-  
-font-size: 15px;
-line-height: 1.5;
-color: #666;
-display: block;
-width: 100%;
-background: #fffcfc;
-height: 50px;
-border-radius: 25px;
-padding: 0 20px 0 45px;
-
-}
 
 
 
@@ -68,9 +124,9 @@ padding: 0 20px 0 45px;
     
 
     button {
-        background-color: #f83866;
+        background-color:  #ff5729;
         border-radius: 5rem;
-        padding: 1rem 2rem;
+        padding: 0.5rem 1.5rem;
         color: #ecf3f2;
         font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 0.27), 1.5rem);
         align-self: self-start;

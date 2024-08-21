@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import "./ReferAfriend.scss"
-
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 import heroimage from "../../Assest/Group 9154.png"
 import profilepic from "../../Assest/male-female-office-workers.jpg"
@@ -144,6 +145,45 @@ const ReferAfriend = () => {
     })
 
   })
+
+
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_e0d3s2m', 'template_33wmxz2', form.current, {
+        publicKey: 'SVHejchWMbnmGSuZQ',
+      })
+      .then(
+        () => {
+          toast.success('Your Response has been recorded Successfully!')
+         
+          form.current.reset(); 
+        },
+        (error) => {
+          toast.error('Server Error! Please try again after sometime!')
+          console.log(error)
+        },
+      );
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className='referAfriend'>

@@ -197,7 +197,7 @@ const WhyCISAssist = () => {
         <div className="cardContainer">
           <div className="card1 card">
             <div className="left"><img src={money} /></div>
-            <div className="right">  <h3>Maximize Rebate</h3>
+            <div className="right">  <h3>Maximized Rebate</h3>
             <p>
             we ensure you get the maximum CIS rebate with minimal effort.
             </p></div>
@@ -571,7 +571,7 @@ const WhyCISAssist = () => {
       <div className="howItWork">
         <div className="cont">
           <div className="left">
-            <h1>Your money is waiting for you to claim it! There are £4.5 billion in unclaimed rebates, benefits, and tax credits.</h1>
+            <h1>Your money is waiting for you to claim it! There are £4.5 bn in unclaimed rebates, benefits, and tax credits.</h1>
        
           </div>
 

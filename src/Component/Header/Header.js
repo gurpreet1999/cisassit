@@ -87,11 +87,11 @@ const Header = () => {
           <p>FAQs</p>
         </NavLink> */}
 
-        {/* <NavLink to="/make-a-claim">
+         <NavLink to="/make-a-claim">
           <button>
             <strong>Make a claim</strong>
           </button>
-        </NavLink> */}
+        </NavLink> 
       </div>
       </div>
       {showNavbar && (
@@ -144,6 +144,11 @@ const Header = () => {
         >
           <p>Refer a friend</p>
         </NavLink>
+        <NavLink to="/make-a-claim">
+          <button>
+            <strong>Make a claim</strong>
+          </button>
+        </NavLink> 
              
             </div>
           </div>

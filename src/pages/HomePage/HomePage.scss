@@ -195,15 +195,16 @@
             font-weight: 700;
             line-height: 1;
 
-            font-size: clamp(
-              1.5rem,
-              1.5rem + ((1vw - 0.2rem) * 0.405),
-              1.875rem
-            );
+            font-size: 28px;
           }
           p {
             color: #323232;
             font-size: 1.2rem;
+
+            .bold{
+            color: #ff6127;
+            font-weight: 700;
+            }
           }
         }
       }
@@ -348,7 +349,8 @@
           margin-top: -0.5rem;
 
           strong {
-            color: #323232;
+            color: #ff6127;
+            font-weight: 700;
           }
         }
         button {
@@ -599,6 +601,10 @@ text-align: center;
             p {
              
               font-size: 16px;
+              .bold{
+                font-weight: 700;
+                
+              }
             }
           }
         }

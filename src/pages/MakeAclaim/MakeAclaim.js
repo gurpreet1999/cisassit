@@ -9,6 +9,8 @@ import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import PlaceRoundedIcon from '@mui/icons-material/PlaceRounded';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
+import DescriptionIcon from '@mui/icons-material/Description';
+import CallIcon from "@mui/icons-material/Call";
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import gsap from "gsap";
@@ -144,34 +146,34 @@ const MakeAclaim = () => {
   })
 
 
-  const form = useRef();
+
 
   const [loader,setLoader] = useState(false)
 
 
 
 
-const sendEmail = (e) => {
-  setLoader(true)
-  e.preventDefault();
-  emailjs
-    .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
-      publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-    })
-    .then(
-      () => {
-        console.log('SUCCESS!');
-        setLoader(false)
-        form.current.reset();
-        toast.success('Your Response has been recorded Successfully!')
-      },
-      (error) => {
-        setLoader(false)
-        toast.error('Server Error! Please try again after sometime!')
-        console.log(error)
-      },
-    );
-};
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_e0d3s2m', 'template_33wmxz2', form.current, {
+        publicKey: 'SVHejchWMbnmGSuZQ',
+      })
+      .then(
+        () => {
+          toast.success('Your Response has been recorded Successfully!')
+         
+          form.current.reset(); 
+        },
+        (error) => {
+          toast.error('Server Error! Please try again after sometime!')
+          console.log(error)
+        },
+      );
+  };
 
 
 
@@ -188,33 +190,35 @@ const sendEmail = (e) => {
 
 <div className='left'>
 
-<h1>Make a claim</h1>
-<p>Our average customer rebate is over £3,000.
-  <br/>
-  <br/>
+<h1>Make a <span>claim</span></h1>
 
-Add your details below and one of our accounting consultants will contact you for a free 15-min call to discuss your rebate.
-  </p>
 
   <form  ref={form} onSubmit={sendEmail}>
   <header>
     <h2>Send us your details and one
     of our team will be in touch today.</h2>
   </header>
-  <div class="wrapper">
-    <Person2RoundedIcon/>
-    <input  className='input100' type="text" placeholder="Username" required/>
-    <span className='focus-input100'></span>
-
-  </div>
-  <div class="wrapper">
-  <EmailRoundedIcon/>
-    <input type="text" placeholder="Email" required/>
-  </div>
-  <div class="wrapper">
-  <LockPersonRoundedIcon/>
-    <input type="password" placeholder="Password" required/>
-  </div>
+  <div className="wrapper">
+                <Person2RoundedIcon className="inputIcon" />
+                <input
+                  className="input100"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div className="wrapper">
+                <EmailRoundedIcon className="inputIcon" />
+                <input type="text" placeholder="Email" required />
+              </div>
+              <div className="wrapper">
+                <CallIcon className="inputIcon" />
+                <input type="number" placeholder="Phone Number" required />
+              </div>
+              <div className="wrapper">
+                <DescriptionIcon className="inputIcon" />
+                <textarea type="text" placeholder="Description" required />
+              </div>
   <button type="submit">Submit</button>
  
 </form>
@@ -233,51 +237,7 @@ Add your details below and one of our accounting consultants will contact you fo
 
 
 
-<div className='aboutCompany'>
 
-<div className='ceo'>
-
-  <figure>
-    <img src={profilepic}/>
-  </figure>
-
-  <h1>Mr.Hassan Magdy</h1>
-  <p>CEO , ProCre</p>
- 
-  <div className='wrapper'>
-  <div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:369 258 147">Tel : 369 258 147</a></span></div>
-  <div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: h@procrew.pro</a></span></div>
-
-
-    
-    </div>
-
-
-
-</div>
-<div className='office'>
-
-  <h1>Our Office</h1>
-
- <div className='address'>
- <PlaceRoundedIcon/>
- <p>TaxHoot<br/>
-  30 Churchill Place,<br/>
-  Canary Wharf,<br/>
-  London E14 5EU
-</p>
-
-
- </div>
- 
-
-  <figure className='map'>
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.428178097917!2d-0.024621511144755737!3d51.505360138183825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602b0a1266417%3A0x8816199b3209b78f!2sCanary%20Wharf!5e0!3m2!1sen!2sin!4v1721928776591!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </figure>
-</div>
-
-</div>
 
 </div>
 
@@ -297,51 +257,7 @@ Add your details below and one of our accounting consultants will contact you fo
 
     </div>
 
-<div className='reviewSection'>
 
-<h1>
-  Our Top Reviews
-</h1>
-
-
-<div className='cardWrapper'>
-
-
-<div className='reviewCard'>
-
-<header>
-
-<h4>Excelent</h4>
-<figure><img src={star}/></figure>
-
-</header>
-
-<div className='comment'>
-Courses was fantastic! It is Master platform for those looking to start a new career, or need a refresher
-</div>
-<div className='userDetail'>
-
-<figure>
-<img src={profilepic}/>
-</figure>
-<div className='name'>Mark <span>11 july</span>   </div>
-
-</div>
-
-</div>
-
-
-
-
-
-</div>
-<div class="navigation-button">
-  <span class="dot" ></span>
-  <span class="dot" ></span>
-  <span class="dot" ></span>
-</div>
-
-</div>
 </div>
   )
 }

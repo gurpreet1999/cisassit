@@ -26,9 +26,9 @@ const App = () => {
             {/* <Route path="/self-assesment" element={<SelfAssesment/>} /> */}
             <Route path="/refer-a-friend" element={<ReferAfriend/>} />
             <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
-            {/* <Route path="/make-a-claim" element={<MakeAclaim/>} />
-            <Route path="/faqs" element={<FAQ/>} /> */}
-          
+            <Route path="/make-a-claim" element={<MakeAclaim/>} />
+            {/* <Route path="/faqs" element={<FAQ/>} />
+           */}
           </Routes>
         </Suspense>
         <Footer />
