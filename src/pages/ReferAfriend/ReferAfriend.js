@@ -227,11 +227,11 @@ Plus anyone can refer, so why not start now!
 
 
 <h4>Mr.Hassan Magdy</h4>
-<p>CEO , ProCre</p>
+<p>CEO , CISAssist</p>
 
 <div className='wrapper'>
 <div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:369 258 147">Tel : 369 258 147</a></span></div>
-<div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: h@procrew.pro</a></span></div>
+<div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: assist@cisassist.com</a></span></div>
 
 
   
@@ -240,7 +240,7 @@ Plus anyone can refer, so why not start now!
 
 
 </div>
-<div className='office'>
+{/* <div className='office'>
 
 <h4>Our Office</h4>
 
@@ -257,12 +257,12 @@ London E14 5EU
 
 
 
+</div> */}
 </div>
-</div>
-<figure className='map'>
+{/* <figure className='map'>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.428178097917!2d-0.024621511144755737!3d51.505360138183825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602b0a1266417%3A0x8816199b3209b78f!2sCanary%20Wharf!5e0!3m2!1sen!2sin!4v1721928776591!5m2!1sen!2sin" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</figure>
+</figure> */}
 
 
 </div>

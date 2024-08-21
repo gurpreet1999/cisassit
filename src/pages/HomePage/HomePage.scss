@@ -10,7 +10,7 @@
       width: 50%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
 
       h1 {
@@ -27,6 +27,13 @@
         color: #ecf3f2;
         font-size: 1.25rem;
         font-weight: 400;
+      }
+
+      h2{
+        color: #ff6127;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: -4px;
       }
       button {
         background-color: #ff4400;
@@ -521,7 +528,9 @@ text-align: center;
         flex-direction: column;
         gap: 5px;
       
-  
+    h2{
+      font-size: 18px;
+    }
         h1 {
          
           font-size: 33px;
@@ -546,7 +555,16 @@ text-align: center;
       }
     }
 
+.reviewSection{
+  padding: 16px 20px;
+  .left{
+    h1{
 
+      font-size: 22px;
+
+    }
+  }
+}
     .workingProcess {
      
      

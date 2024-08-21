@@ -168,7 +168,7 @@ const WhyCISAssist = () => {
             Navigating CIS rebate claims can be challenging and time-consuming.
             At CISAssist, we streamline the process by combining our expert team
             with advanced technology to ensure a smooth, transparent, and
-            efficient experience for your claims and rebates.
+            efficient experience for your rebate claims.
           </p>
           <button>
             <strong>Get Started</strong>
@@ -208,7 +208,7 @@ const WhyCISAssist = () => {
           <div className="left"><img src={compliance}/></div>
           <div className="right">
 
-          <h3>compliance</h3>
+          <h3>Compliance</h3>
             <p>
             We ensure full HMRC compliance, so you can manage your CIS obligations worry-free.
             </p>
@@ -272,7 +272,7 @@ const WhyCISAssist = () => {
                   />
                 </svg>
               </figure>
-              <label>Up to £2500 rebate</label>
+              <label>A Minimum £2500 rebate</label>
             </div>
             <div className="criteria">
               <figure>
@@ -571,7 +571,7 @@ const WhyCISAssist = () => {
       <div className="howItWork">
         <div className="cont">
           <div className="left">
-            <h1>   Don’t wait. Reclaim what you deserve Now!</h1>
+            <h1>Your money is waiting for you to claim it! There are £4.5 billion in unclaimed rebates, benefits, and tax credits.</h1>
        
           </div>
 

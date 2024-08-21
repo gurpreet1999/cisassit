@@ -66,12 +66,12 @@ const Header = () => {
           <p>Why CISAssist?</p>
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/self-assesment"
           className={({ isActive }) => (isActive ? "activeLink link" : "link")}
         >
           <p>Self Assessment</p>
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           to="/refer-a-friend"
@@ -128,14 +128,14 @@ const Header = () => {
         >
           <p>Why CISAssist?</p>
         </NavLink>
-
+{/* 
         <NavLink
           to="/self-assesment"
           className={({ isActive }) => (isActive ? "activeLink link" : "link")}
           onClick={() => setShowNavbar(!showNavbar)}
         >
           <p>Self Assessment</p>
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           to="/refer-a-friend"

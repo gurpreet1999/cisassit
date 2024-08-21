@@ -57,9 +57,10 @@ const HomePage = () => {
            
           </h1>
           <p>
-            CISAssist simplifies  CIS Tax Rebates and CIS management for UK
-            employees, we minimize the stress and maximize the rebate .
+            CISAssist simplifies  CIS Tax Rebates and
+            CIS contractors, 
           </p>
+          <h2 className="bold-orange">we minimize the stress and maximize the rebate .</h2>
           <button onClick={navigateToClaim}>
             <strong>Get Started</strong>
           </button>
@@ -79,7 +80,7 @@ const HomePage = () => {
       {/* Review Section */}
       <div className="reviewSection">
         <div className="left">
-          <h1>Trusted by Many  Happy Customer</h1>
+          <h1>Trusted throughout the UK</h1>
           <p>Based on 113 reviews</p>
         </div>
         <div className="reviewContainer">
@@ -174,8 +175,7 @@ const HomePage = () => {
             <div className="cardContent">
               <h2>Consult Our Experts</h2>
               <p>
-                Talk to our accounting team to determine if you meet the
-                criteria for tax rebates and CIS returns.{" "}
+                Talk to our accounting team to determine the size of your rebate
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ const HomePage = () => {
             <div className="cardContent">
               <h2>Leave the Work to Us</h2>
               <p>
-                Our team of expert accountants will handle your rebate
+                Our team of expert <span>accountants</span> will handle your rebate
                 processing with HMRC, ensuring a smooth and efficient
                 experience.
               </p>
@@ -208,8 +208,7 @@ const HomePage = () => {
             <div className="cardContent">
               <h2>Get Your Rebate Fast</h2>
               <p>
-                We transfer your rebate to you as soon as we receive it from
-                HMRC, ensuring a swift and seamless process.
+                 multiple payment options
               </p>
             </div>
           </div>
@@ -223,7 +222,7 @@ const HomePage = () => {
       <section className="services">
         <div className="card">
           <div className="cardContent">
-            <h2>What Can You Claim for with CISAssist?</h2>
+            <h2>Expenses you can claims</h2>
             <p>
               At CISAssist, our expertise covers a range of claims, including
               <strong>
@@ -254,7 +253,7 @@ const HomePage = () => {
           <div className="cardContent">
             <h2>Minimize Claims Management</h2>
             <p>
-              CISAssist is dedicated to minimize the stress and maximize rebate
+              CISAssist is dedicated to minimizing the stress and maximizing the rebate
             </p>
           </div>
         </div>
@@ -363,7 +362,7 @@ const HomePage = () => {
             />
           </svg>
         </figure>
-        <label>Up to £2500 rebate</label>
+        <label>A Minimum £2500 rebate</label>
       </div>
       <div className="criteria">
         <figure>

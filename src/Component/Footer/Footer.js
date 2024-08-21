@@ -41,7 +41,7 @@ const Footer = () => {
             </h4>
 
             {/* <NavLink  className='link' onClick={scrollToTop} to="/refer-a-friend">Refer a Friend</NavLink> */}
-            <NavLink  className='link' onClick={scrollToTop} to="/contact-us">Get in Touch</NavLink>
+            <NavLink  className='link' onClick={scrollToTop} to="/refer-a-friend">Get in Touch</NavLink>
           </div>
         </div>
       </div>
