@@ -53,12 +53,12 @@ const HomePage = () => {
       <section className="heroSection">
         <div className="left">
           <h1>
-            <i>Effortless</i> Minimum CIS Rebate is <i>&#163;</i>2500
-
+            <i>Minimum</i>  <br/>
+            CIS Rebate is <i>&#163;</i>2500
            
           </h1>
           <p>
-            CISAssist simplifies  CIS Tax Rebates and
+            CISAssist simplifies  CIS Tax Rebates for
             CIS contractors
           </p>
           <h2 className="bold-orange"><u>we  minimize the stress and maximize the rebate</u></h2>
@@ -158,7 +158,7 @@ const HomePage = () => {
             <div className="cardContent">
               <h2>Consult Our Experts</h2>
               <p>
-                Talk to our accounting team to determine the size of your rebate
+                our team of accountants to determine the size of your rebate
               </p>
             </div>
           </div>
@@ -235,7 +235,7 @@ const HomePage = () => {
           <div className="cardContent">
             <h2>Minimize Claims Management</h2>
             <p>
-              CISAssist is dedicated to <strong>minimizing</strong> the stress and <strong>maximizing</strong> the rebate
+              CISAssist is dedicated to <strong>minimizing</strong> the stress and <strong>maximizing</strong> your rebate
             </p>
           </div>
         </div>
