@@ -63,8 +63,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-direction: column;
+
+    .left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1{
+        margin-bottom: 0;
+      }
+       svg{
+        width: 40%;
+        margin-left: -5px;
+       }
+    }
 
     .reviewContainer {
       display: flex;
@@ -86,64 +100,51 @@
     .reviewCard {
       padding: 1rem;
       width: 20rem;
-      border: 0.2px solid #ff85038a;
+     
       border-radius: 10px;
-      background-color: #ffffff73;
+    
      
       .cardHeader{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 10px;
+
+
+          figure{
+            width: 50%;
+          }
    .userDetail{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    .name-date{
-    
-      display: flex;
-      flex-direction: column;
-      h6{
-        margin: 0;
-
-      }
-      p{
-        margin: 0;
-      }
-    }
+  
    }
-        .rating{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-        }
 
+      }
+
+      .comment{
+   h4{
+  margin: 0px;
+   }
+   p{
+color: #323232;
+font-size: 13px;
+
+
+
+   }
       }
      
-      .reviewContent {
-        h1 {
-          font-size: 1rem;
+      .userDetail{
+        color: #636363;
+        span{
           font-weight: 700;
-          height: 16px;
-        }
-        p {
-          font-size: 0.75rem;
-          line-height: 16px;
-          font-weight: 500;
-          color: #5c5c5c;
-        }
-
-        .userDetail {
-          color: rgba(12, 37, 53, 0.6);
-          font-size: 0.7rem;
-
-          span {
-            color: rgba(12, 37, 53, 0.6);
-          }
+          color: #858585;
         }
       }
+     
     }
   }
 
@@ -378,11 +379,11 @@
 
   .requestCallback {
     // background-color: rgb(240, 240, 240);
-    height: 40rem;
+    height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("https://media.istockphoto.com/id/2148476327/vector/3d-isometric-map-of-british-isles-region-isolated-with-shadow.jpg?s=2048x2048&w=is&k=20&c=5mrSdAvm-DH1T40Afs_KNB5aPE4WJm_NMR62ZEvp1XY=");
+    background: url("../../Assest/footer/ukMap.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -391,7 +392,7 @@
     div {
       background-color: #2424243a;
       backdrop-filter: blur(2px);
-      height: 50%;
+      height: 60%;
       width: 80%;
       border-radius: 50px;
       display: flex;
@@ -694,7 +695,7 @@ gap: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url("../../Assest/footer/worldMap.jpg");
+      background: url("../../Assest/footer/ukMap.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
