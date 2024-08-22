@@ -87,10 +87,8 @@ const Header = () => {
           <p>FAQs</p>
         </NavLink> */}
 
-         <NavLink to="/make-a-claim">
-          <button>
-            <strong>Make a claim</strong>
-          </button>
+         <NavLink to="/make-a-claim"   className={({ isActive }) => (isActive ? "activeLink link" : "link")}     >
+         <p>Make a claim</p>
         </NavLink> 
       </div>
       </div>
@@ -144,10 +142,8 @@ const Header = () => {
         >
           <p>Refer a friend</p>
         </NavLink>
-        <NavLink to="/make-a-claim">
-          <button>
-            <strong>Make a claim</strong>
-          </button>
+        <NavLink to="/make-a-claim"   onClick={() => setShowNavbar(!showNavbar)}>
+          <p>Make a claim</p>
         </NavLink> 
              
             </div>

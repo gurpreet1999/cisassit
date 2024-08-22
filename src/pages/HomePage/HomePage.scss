@@ -382,14 +382,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("../../Assest/footer/worldMap.jpg");
+    background: url("https://media.istockphoto.com/id/2148476327/vector/3d-isometric-map-of-british-isles-region-isolated-with-shadow.jpg?s=2048x2048&w=is&k=20&c=5mrSdAvm-DH1T40Afs_KNB5aPE4WJm_NMR62ZEvp1XY=");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
 
     div {
       background-color: #2424243a;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(2px);
       height: 50%;
       width: 80%;
       border-radius: 50px;

@@ -571,7 +571,7 @@ const WhyCISAssist = () => {
       <div className="howItWork">
         <div className="cont">
           <div className="left">
-            <h1>Your money is waiting for you to claim it! There are £4.5 bn in unclaimed rebates, benefits, and tax credits.</h1>
+            <h1>Your money is waiting for you to claim it! There are <strong>£</strong>4.5  <strong>bn</strong> in unclaimed rebates, benefits, and tax credits.</h1>
        
           </div>
 

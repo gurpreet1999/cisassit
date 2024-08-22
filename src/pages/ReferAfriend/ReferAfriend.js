@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React,{useRef, useState} from 'react'
 import "./ReferAfriend.scss"
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
@@ -23,7 +23,7 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 
 const ReferAfriend = () => {
-
+  const [loader,setLoader] = useState(false)
   useGSAP(()=>{
     
     gsap.utils.toArray("h1").forEach((heading) => {
@@ -151,19 +151,22 @@ const ReferAfriend = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    setLoader(true)
     e.preventDefault();
 
     emailjs
-      .sendForm('service_e0d3s2m', 'template_33wmxz2', form.current, {
+      .sendForm('service_e0d3s2m', 'template_ue9pm0h', form.current, {
         publicKey: 'SVHejchWMbnmGSuZQ',
       })
       .then(
         () => {
+          setLoader(false)
           toast.success('Your Response has been recorded Successfully!')
          
           form.current.reset(); 
         },
         (error) => {
+          setLoader(false)
           toast.error('Server Error! Please try again after sometime!')
           console.log(error)
         },
@@ -198,7 +201,7 @@ const ReferAfriend = () => {
 Plus anyone can refer, so why not start now!
   </p>
 
-  <form>
+  <form  ref={form} onSubmit={sendEmail}  >
   <header>
     <h2>Your details.</h2>
   </header>
@@ -209,37 +212,40 @@ Plus anyone can refer, so why not start now!
                   type="text"
                   placeholder="Username"
                   required
+                  name='name'
                 />
               </div>
               <div className="wrapper">
                 <EmailRoundedIcon className="inputIcon" />
-                <input type="text" placeholder="Email" required />
+                <input name='enail'   type="text" placeholder="Email" required />
               </div>
               <div className="wrapper">
                 <CallIcon className="inputIcon" />
-                <input type="number" placeholder="Phone Number" required />
+                <input name='phone'  type="number" placeholder="Phone Number" required />
               </div>
   
  
-</form>
-<form>
+
+
   <header>
     <h2>Your friends details</h2>
   </header>
   <div class="wrapper">
   <Person2RoundedIcon className="inputIcon" />
-    <input type="text" placeholder="'Referred by' First Name*" required/>
+    <input   name='friend_name' type="text" placeholder="'Referred by' First Name*" required/>
 
   </div>
   <div class="wrapper">
   <EmailRoundedIcon className="inputIcon" />
-    <input type="email" placeholder="'Referred by' Email*" required/>
+    <input   name='friend_email' type="email" placeholder="'Referred by' Email*" required/>
   </div>
   <div class="wrapper">
   <CallIcon className="inputIcon" />
-    <input type="number" placeholder="Referral Phone Number" required/>
+    <input  name='friend_phone'  type="number" placeholder="Referral Phone Number" required/>
   </div>
-  <button type="submit">Submit</button>
+  <button type="submit" disabled={loader}>
+        {loader ? 'Submitting...' : 'Submit'}
+      </button>
  
 </form>
 
@@ -266,12 +272,12 @@ Plus anyone can refer, so why not start now!
 
 
 
-<h4>Mr.Hassan Magdy</h4>
-<p>CEO , CISAssist</p>
+
+<p>CEO , <strong>CISAssist</strong></p>
 
 <div className='wrapper'>
 <div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:369 258 147">Tel : 369 258 147</a></span></div>
-<div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: assist@cisassist.com</a></span></div>
+<div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: Assist@cisassist.com</a></span></div>
 
 
   

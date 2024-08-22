@@ -156,6 +156,7 @@ const MakeAclaim = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    setLoader(true)
     e.preventDefault();
 
     emailjs
@@ -164,11 +165,13 @@ const MakeAclaim = () => {
       })
       .then(
         () => {
+          setLoader(false)
           toast.success('Your Response has been recorded Successfully!')
          
           form.current.reset(); 
         },
         (error) => {
+          setLoader(false)
           toast.error('Server Error! Please try again after sometime!')
           console.log(error)
         },
@@ -192,12 +195,12 @@ const MakeAclaim = () => {
 
 <h1>Make a <span>claim</span></h1>
 
-
-  <form  ref={form} onSubmit={sendEmail}>
-  <header>
+<header>
     <h2>Send us your details and one
     of our team will be in touch today.</h2>
   </header>
+  <form  ref={form} onSubmit={sendEmail}>
+  
   <div className="wrapper">
                 <Person2RoundedIcon className="inputIcon" />
                 <input
@@ -205,21 +208,24 @@ const MakeAclaim = () => {
                   type="text"
                   placeholder="Username"
                   required
+                  name='name'
                 />
               </div>
               <div className="wrapper">
                 <EmailRoundedIcon className="inputIcon" />
-                <input type="text" placeholder="Email" required />
+                <input  name='email'  type="text" placeholder="Email" required />
               </div>
               <div className="wrapper">
                 <CallIcon className="inputIcon" />
-                <input type="number" placeholder="Phone Number" required />
+                <input name='phone'  type="number" placeholder="Phone Number" required />
               </div>
               <div className="wrapper">
                 <DescriptionIcon className="inputIcon" />
-                <textarea type="text" placeholder="Description" required />
+                <textarea  name='description' type="text" placeholder="Description" required />
               </div>
-  <button type="submit">Submit</button>
+              <button type="submit" disabled={loader}>
+        {loader ? 'Submitting...' : 'Submit'}
+      </button>
  
 </form>
 
