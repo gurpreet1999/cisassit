@@ -125,6 +125,8 @@
       }
 
       .comment{
+        display: flex;
+        flex-direction: column;
    h4{
   margin: 0px;
    }
