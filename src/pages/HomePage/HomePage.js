@@ -124,7 +124,7 @@ const HomePage = () => {
                 <p>  Jack  at CISAssist was an absolute lifesaver! He guided me through my tax refund claim </p>
               
               </div>
-              <div className="userDetail"><span>ashley</span>, 18 hour ago</div>
+              <div className="userDetail"><span>ashley</span>, 2 days ago</div>
             </div>
             <div className="reviewCard">
               <div className="cardHeader">
