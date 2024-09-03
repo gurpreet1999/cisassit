@@ -27,7 +27,7 @@ import constructionCard from "../../Assest/services/constructionImg.jpg";
 import constructionCard2 from "../../Assest/services/constructionImg2.jpg";
 
 // animation
-import growthAnimation from "../../Assest/animation/growthAnimation.json";
+import growthAnimation from "../../Assest/animation/construction.json";
 import { useNavigate } from "react-router-dom";
 import verify from "../../Assest/verify.png"
 import basic from "../../Assest/basic.png"
@@ -53,7 +53,7 @@ const HomePage = () => {
       <section className="heroSection">
         <div className="left">
           <h1>
-            <i>Minimum</i>  <br/>
+            <i>The Minimum</i>  <br/>
             CIS Rebate is <i>&#163;</i>2500
            
           </h1>
@@ -61,7 +61,7 @@ const HomePage = () => {
             CISAssist simplifies  CIS Tax Rebates for
             CIS contractors
           </p>
-          <h2 className="bold-orange"><u>we  minimize the stress and maximize the rebate</u></h2>
+          <h2 className="bold-orange"><u>we  minimise the stress and maximise the rebate</u></h2>
           <button onClick={navigateToClaim}>
             <strong>Get Started</strong>
           </button>
@@ -210,7 +210,7 @@ const HomePage = () => {
               <strong>
                 {" "}
                 travel expenses, accommodation, clothing & uniform, tools &
-                equipment, and training
+                equipment, training
               </strong>{" "}
               — and more.
             </p>
@@ -233,9 +233,9 @@ const HomePage = () => {
           </figure>
 
           <div className="cardContent">
-            <h2>Minimize Claims Management</h2>
+            <h2>minimise Claims Management</h2>
             <p>
-              CISAssist is dedicated to <strong>minimizing</strong> the stress and <strong>maximizing</strong> your rebate
+              CISAssist is dedicated to <strong>minimising</strong> the stress and <strong>maximising</strong> your rebate
             </p>
           </div>
         </div>
@@ -307,7 +307,7 @@ const HomePage = () => {
 
       <div className="ourServices">
 
-<h1>What can you claim for?</h1>
+<h1>Choose Your Payment Options</h1>
 
 <div className="serviceContainer"> 
   <div className="left">
