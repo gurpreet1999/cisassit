@@ -158,7 +158,7 @@ const HomePage = () => {
             <div className="cardContent">
               <h2>Consult Our Experts</h2>
               <p>
-                our team of accountants to determine the size of your rebate
+                  Our team of accountants to determine the size of your rebate
               </p>
             </div>
           </div>
