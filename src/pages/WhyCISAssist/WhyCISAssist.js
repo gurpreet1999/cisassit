@@ -168,7 +168,7 @@ const WhyCISAssist = () => {
             Navigating CIS rebate claims can be challenging and time-consuming.
             At CISAssist, we streamline the process by combining our expert team
             with advanced technology to ensure a smooth, transparent, and
-            efficient experience for your rebate claims.
+            efficient experience for your rebate claim.
           </p>
           <button>
             <strong>Get Started</strong>
@@ -199,7 +199,7 @@ const WhyCISAssist = () => {
             <div className="left"><img src={money} /></div>
             <div className="right">  <h3>Maximised Rebate</h3>
             <p>
-            we ensure you get the maximum CIS rebate with minimal effort.
+            We ensure you get the maximum CIS rebate with minimal effort.
             </p></div>
           
           </div>
@@ -484,7 +484,7 @@ const WhyCISAssist = () => {
           
             
           </div>
-          <div className="card">
+          {/* <div className="card">
             <div className="left"> <figure>
               <img src={premium} alt="tool" />
             </figure></div>
@@ -560,7 +560,7 @@ const WhyCISAssist = () => {
             
             </div>
            
-          </div>
+          </div> */}
        
         </div>
 

@@ -61,7 +61,7 @@ const HomePage = () => {
             CISAssist simplifies  CIS Tax Rebates for
             CIS contractors
           </p>
-          <h2 className="bold-orange"><u>we  minimise the stress and maximise the rebate</u></h2>
+          <h2 className="bold-orange"><u>We  minimise the stress and maximise the rebate</u></h2>
           <button onClick={navigateToClaim}>
             <strong>Get Started</strong>
           </button>
@@ -215,7 +215,7 @@ const HomePage = () => {
               — and more.
             </p>
             <p>
-              Discover what you might be entitled to with our professional
+              Discover what you are entitled to with our professional
               & compliant assistance.
             </p>
             <button>
@@ -233,7 +233,7 @@ const HomePage = () => {
           </figure>
 
           <div className="cardContent">
-            <h2>minimise Claims Management</h2>
+            <h2>Minimise Claims Management</h2>
             <p>
               CISAssist is dedicated to <strong>minimising</strong> the stress and <strong>maximising</strong> your rebate
             </p>
@@ -556,7 +556,7 @@ const HomePage = () => {
     
       
     </div>
-    <div className="card">
+    {/* <div className="card">
       <div className="left"> <figure>
         <img src={premium} alt="tool" />
       </figure></div>
@@ -632,7 +632,7 @@ const HomePage = () => {
       
       </div>
      
-    </div>
+    </div> */}
  
   </div>
 
