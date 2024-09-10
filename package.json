@@ -1,5 +1,6 @@
 {
   "name": "cisassist",
+  "homepage": "https://cisassist.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

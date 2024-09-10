@@ -276,8 +276,8 @@ Plus anyone can refer, so why not start now!
 <p>CEO , <strong>CISAssist</strong></p>
 
 <div className='wrapper'>
-<div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:369 258 147">Tel : 369 258 147</a></span></div>
-<div className='email'><MailOutlineRoundedIcon/><span><a href="mailto:h@procrew.pro">Email: Assist@cisassist.com</a></span></div>
+<div className='phone'><LocalPhoneRoundedIcon/><span><a href="tel:03700420203">Tel : 03700420203</a></span></div>
+<div className='email'><MailOutlineRoundedIcon/><span><a href="Assist@cisassist.com">Email: Assist@cisassist.com</a></span></div>
 
 
   

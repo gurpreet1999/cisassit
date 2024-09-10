@@ -48,11 +48,7 @@ const Footer = () => {
 
       <div className="socialLinks">
         <p>
-          ©CISAssist. CISAssist is a company registered in England and
-          Wales (No. 14703035). Our registered address is TaxHoot, 30 Churchill
-          Place, Canary Wharf, London, E14 5EU. TaxHoot Ltd acts on behalf of
-          our customers as a tax intermediary, customers are free to contact
-          HMRC directly themselves.{" "}
+        CISAssist is a trading brand of BINARY ACCOUNTING SERVICES LTD(No. 15635843). Our registered address 27 Old Gloucester Street, London, United Kingdom, WC1N 3AX.{" "}
         </p>
 
         <div className="icons">
